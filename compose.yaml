@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=cutsomer-db'
+      - 'POSTGRES_PASSWORD=1234'
+      - 'POSTGRES_USER=bra'
+    ports:
+      - '5432:5432'
