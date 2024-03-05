@@ -43,10 +43,10 @@ class CustomerRepositoryTest {
     }
 
     //@Test
-    public void connectionEstablishedTest(){
+   /* public void connectionEstablishedTest(){
         assertThat(postgreSQLContainer.isCreated()).isTrue();
         assertThat(postgreSQLContainer.isRunning()).isTrue();
-    }
+    }*/
     @Test
     public void shouldFindCustomerByEmail(){
 

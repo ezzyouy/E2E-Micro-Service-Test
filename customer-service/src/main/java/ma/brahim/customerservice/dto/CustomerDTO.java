@@ -1,4 +1,4 @@
-package ma.brahim.customerservice.entities;
+package ma.brahim.customerservice.dto;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,12 +8,10 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
-@Entity
+
 @AllArgsConstructor @NoArgsConstructor
 @Builder @Getter @Setter @ToString
-public class Customer {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class CustomerDTO {
     private Long id;
     @NotEmpty
     @Size(min = 2)
